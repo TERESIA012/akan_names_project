@@ -26,3 +26,6 @@ span {
     font-size: 18px;
     line-height: 160%;
 }
+.card h5 {
+    text-decoration: underline;
+}

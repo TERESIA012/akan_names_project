@@ -76,25 +76,31 @@ h4 {
 }*/
 .right img {
     float: left;
-    margin-right: 5%;
+    margin-right: 3%;
     margin-left: 5%;
 }
 .right input {
     margin-top: 1.5rem;
+    font-weight: bold;
+    
+    
+
+    
 }
 .right {
-    font-size: large;
+    font-size: 16px;
     font-weight: 400;
 }
 
 
 button {
    border-radius: 12px;
-   padding: 12px 28px;
+   padding: 10px 24px;
    background-color:#704d2d;
   color: black;
   border: 2px solid #f79400;
   transition-duration: 0.4s;
+  
 
 
 }
@@ -108,4 +114,9 @@ button:hover {
     text-align: center;
     font-size: large;
     font-weight: bold;
+}
+.know p {
+    margin-left: 20%;
+    margin-left: 20%;
+    font-size: 20px;
 }

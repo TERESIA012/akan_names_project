@@ -40,7 +40,8 @@
     <div class="akan">
         <h2><span>Akan</span> Names</h2>
         <img src="./assets/akanproject1.jpg" alt="" height="400px">
-        <p class="story"> The Akan people of Ghana frequently name their children after the day of the week they were born. Day names
+        <p class="story"> The Akan people of Ghana frequently name their children after the day of the week they were
+            born. Day names
             are a cultural practice of the Akan people of Ghana and Ivory Coast. Everyday corresponds to a different
             Akan male and female name.Notable individuals with akan names;<span> Kwame Nkurumah,Koffi Annan,Adwoah Aboah
                 <a href="https://en.wikipedia.org/wiki/List_of_Akan_people"> See More ... </a> </span> <br> <br>The
@@ -71,35 +72,45 @@
                 <li>Friday:Afua</li>
                 <li>Saturday:Ama</li>
             </ul>
+
             </p>
         </div>
 
     </div>
     <div class="know">
         <h2> <span>Akan</span> Name Generator </h2><br><br>
+        <p>This website will enable you to know your Akua name by providing your date of birth,month and year.Give it a
+            try.</p>
         <div class="container">
             <div class="form">
                 <div class="left"></div>
                 <div class="right">
-                    
-                    <img src="./assets/akankidsname.jpg" alt="">
-                    <form action="">
-                        <input type="text" name="date" placeholder="DD"><br><br>
-                        <input type="text" name="month" placeholder="MM"><br><br>
-                        <input type="text" name="year" placeholder="YY"><br><br>
-                        <input type="radio" id="male" name="radio" value="Male">Male
-                        <input type="radio" id="female" name="radio" value="Female"> Female<br><br>
-                        <button>Submit</button>
-                    </form>
+
+                    <img src="./assets/akankidsname.jpg" alt="" height="350px">
+                    <div class="form ">
+                        <form action="">
+                            <input type="text" name="date" placeholder="DD" id="date" max="31" maxlength="2" min="1" minlength="1"
+                                required><br><br>
+                            <input type="text" name="month" placeholder="MM" id="month" max="12" maxlength="2"  min="1" minlength="1"
+                                required><br><br>
+                            <input type="text" name="year" placeholder="YY" id="year" max="2090" min="1900" maxlength="4"
+                                required><br><br>
+                            <input type="radio" id="male" name="radio" value="Male" class="gender" required>Male
+                            <input type="radio" id="female" name="radio" value="Female" class="gender" required>
+                            Female<br><br>
+                            <button id="button" onclick="">Submit</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
 
     </div><br><br>
-
-    <div class="copyright">
-        <h5>&copy;2021 All Rights Reserved!</h5>
-    </div>
+    <footer>
+        <div class="copyright">
+            <h5>&copy;2021 All Rights Reserved!</h5>
+        </div>
+    </footer>
 
 
 

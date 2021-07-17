@@ -96,3 +96,9 @@ button:hover {
     background-color:#a60016; 
     color: white;
 }
+.copyright {
+    background-color: #f79400;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}

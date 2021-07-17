@@ -15,6 +15,24 @@ function validate(){
  }
     
 }
+function gender(){
+    var genderCheck=document.getElementsByName("gender");
+    var female=document.getElementById("female");
+    var male=document.getElementById("male");
+
+    if(!(genderCheck[0].checked ||genderCheck[1].checked)){
+        return false;
+    }else if(female.checked){
+        genderCheck=female.value;
+        return genderCheck;
+
+    }else if(male.checked){
+        genderCheck=male.value;
+        return genderCheck;
+    }
+}
+
+
 
 
 

@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: upper-roman;
     font-family: 'Mountains of Christmas', cursive;
 }
 
@@ -14,6 +15,11 @@ h1 {
     height: 52px;
     color: #ebeaea;
     text-decoration: overline;
+}
+h2 {
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline;
 }
 span {
     color: #704d2d;
@@ -28,4 +34,25 @@ span {
 }
 .card h5 {
     text-decoration: underline;
+}
+.akan {
+    margin-right: 5%;
+    margin-left: 5%;
+}
+h4 {
+    
+}
+.names {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    line-height: 200%;
+    
+
+}
+.names ul {
+    font-size: 18px;
+}
+.akan img {
+    float: right;
 }

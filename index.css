@@ -1,0 +1,28 @@
+/*font-family: 'Mountains of Christmas', cursive;*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mountains of Christmas', cursive;
+}
+
+h1 {
+    text-align: center;
+    font-style: italic;
+    background-color: #f79400;
+    height: 52px;
+    color: #ebeaea;
+    text-decoration: overline;
+}
+span {
+    color: #704d2d;
+    
+}
+.card {
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: #f2b966;
+    font-size: 18px;
+    line-height: 160%;
+}

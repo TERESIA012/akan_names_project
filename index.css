@@ -56,3 +56,43 @@ h4 {
 .akan img {
     float: right;
 }
+.akan .story {
+    line-height: normal;
+}
+/*.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px 100px;
+}*/
+.right img {
+    float: left;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.right input {
+    margin-top: 1.5rem;
+}
+.right {
+    font-size: large;
+    font-weight: 400;
+}
+
+
+button {
+   border-radius: 12px;
+   padding: 12px 28px;
+   background-color:#704d2d;
+  color: black;
+  border: 2px solid #f79400;
+  transition-duration: 0.4s;
+
+
+}
+button:hover {
+    background-color:#a60016; 
+    color: white;
+}

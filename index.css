@@ -9,16 +9,18 @@
     
 }
 body {
-    background-color: #f2b966;
+    background-image:linear-gradient(#f79400, #f2b966 );
+    height: 100%;
 }
 
 h1 {
     text-align: center;
     font-style: italic;
+    text-decoration: underline;
     background-color: #f79400;
     height: 52px;
-    color: #ebeaea;
-    text-decoration: overline;
+    color: #000;
+    
 }
 h2 {
     text-align: center;

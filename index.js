@@ -1,4 +1,5 @@
-//createvfunction to validate user input
+//create function to validate user input
+//variables
 function validate() {
     var date = document.getElementById("date").value;
     console.log(date);
@@ -7,7 +8,7 @@ function validate() {
     var year = document.getElementById("year").value;
     console.log(year);
 
-
+//dayofthe week calculation
     if (date == " " || month == " " || year == " ") {
         return false;
     } else {
@@ -25,7 +26,7 @@ function validate() {
 
 }
 
-
+//akan names function
 function myAkanName() {
     let femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
     let maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
@@ -41,7 +42,7 @@ function myAkanName() {
             console.log(gender.value);
   console.log(gender);
 
-
+//conditions
         if (gender.value === "Female") {
             document.querySelector(".any").innerHTML = "Your Akan name is" + femaleNames[validate()];
             document.querySelector(".text").innerHTML = "Your birth day is" + weekDays[validate()];
@@ -54,7 +55,7 @@ function myAkanName() {
         }
         }
 
-        //var gender="female" ; 
+        
 
 
   
@@ -62,34 +63,4 @@ function myAkanName() {
 
 
 }
-    // if(gender=="male"){
-    //    document.querySelector(".any").innerHTML="Your Akan name is"+ maleNames[validate()]                                
-    //    document.querySelector(".text").innerHTML="Your birth day is" + weekDays[validate()];
-    // }
-    //  else{       
-    //      document.querySelector(".any").innerHTML="Your Akan name is"+ maleNames[validate()];
-    //      document.querySelector(".text").innerHTML="Your birth day is" + weekDays[validate()]; 
-    // }
-
-
-
- //function yourAkanName(){
-//     var maleNames=["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
-//     var femaleNames=["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
-//     var weekDays=["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-
-//     var gender=document.querySelector('input[name="gender"]:checked');
-
-
-
-
-//     if(gender==="male"){
-//         document.querySelector(".any").innerHTML="Your Akan name is"+ maleNames[validate()];
-//         document.querySelector(".text").innerHTML="Your birth day is" + weekDays[validate()];
-//     }
-//     else{
-//         document.querySelector(".any").innerHTML="Your Akan name is"+ maleNames[validate()];
-//         document.querySelector(".text").innerHTML="Your birth day is" + weekDays[validate()]; 
-//     }
-
-// }    
+    

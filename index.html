@@ -87,19 +87,24 @@
                 <div class="right">
 
                     <img src="./assets/akankidsname.jpg" alt="" height="350px">
-                    <div class="form ">
-                        <form action="">
-                            <input type="text" name="date" placeholder="DD" id="date" max="31" maxlength="2" min="1" minlength="1"
-                                required><br><br>
-                            <input type="text" name="month" placeholder="MM" id="month" max="12" maxlength="2"  min="1" minlength="1"
-                                required><br><br>
-                            <input type="text" name="year" placeholder="YY" id="year" max="2090" min="1900" maxlength="4"
-                                required><br><br>
-                            <input type="radio" id="male" name="gender" value="Male" class="gender" required>Male
-                            <input type="radio" id="female" name="gender" value="Female" class="gender" required>
+                    <div class="form">
+                        <form onsubmit="return false" name="form">
+                            <input type="text" name="date" placeholder="DD" id="date" max="31" maxlength="2" min="1"
+                                minlength="1" required><br><br>
+                            <input type="text" name="month" placeholder="MM" id="month" max="12" maxlength="2" min="1"
+                                minlength="1" required><br><br>
+                            <input type="text" name="year" placeholder="YY" id="year" max="2090" min="1900"
+                                maxlength="4" required><br><br>
+                            <input type="radio" id="male" name="gender" value="Male" class="" required>Male
+                            <input type="radio" id="female" name="gender" value="Female" class="" required>
                             Female<br><br>
-                            <button id="button" onclick="">Submit</button>
+                            <button id="button" onclick="yourAkanName()" type="submit">Submit</button>
                         </form>
+                        <div>
+                            <p class="any"></p>
+                            <p class="text"></p>
+                            
+                        </div>
                     </div>
                 </div>
             </div>
@@ -127,7 +132,7 @@
 
 
 
-    <script src="./index.js"></script>
+    <script src="index.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

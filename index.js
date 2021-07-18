@@ -1,46 +1,95 @@
 //createvfunction to validate user input
-function validate(){
-    var date=document.getElementById("date").value;
-    var month=document.getElementById("month").value;
-    var year=document.getElementById("year").value;
+function validate() {
+    var date = document.getElementById("date").value;
+    console.log(date);
+    var month = document.getElementById("month").value;
+    console.log(month);
+    var year = document.getElementById("year").value;
+    console.log(year);
 
 
-    if(date=="" || month=="" ||year==""){
-         return false;
-    }else{
-          var CC=year.slice(2);
-          var YY=year.slice(-2);
-          var dayOfTheWeek=Math.trunc(( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(month+1)/10)) + date ) % 7);
-          return dayOfTheWeek;
- }
-    
+    if (date == " " || month == " " || year == " ") {
+        return false;
+    } else {
+        var CC = year.slice(2);
+        var YY = year.slice(-2);
+        console.log("CC" + CC + "YY" + YY)
+        let fullBirthday = year + "-" + month + "-" + date;
+        let dayvalue = new Date(fullBirthday);
+        console.log(dayvalue);
+        let dayOfTheWeek = dayvalue.getDay();
+
+        return dayOfTheWeek;
+    }
+
+
 }
 
 
-function yourAkanName(){
-    var maleNames=["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
-    var femaleNames=["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
-    var weekDays=["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+function myAkanName() {
+    let femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+    let maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+    let weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
-    var gender=document.querySelector('input[name="gender"]:checked');
+    var genders = document.getElementsByName("gender");
+    //console.log(gender);
+    genders.forEach((gender) => {
+        if (gender.checked) {
+            console.log(`You checked: ${gender.value}`);
+           
+            
+            console.log(gender.value);
+  console.log(gender);
 
 
+        if (gender.value === "Female") {
+            document.querySelector(".any").innerHTML = "Your Akan name is" + femaleNames[validate()];
+            document.querySelector(".text").innerHTML = "Your birth day is" + weekDays[validate()];
+            console.log("Your Akan name is" + femaleNames[validate()]);
+        }
+        else if (gender.value === "Male") {
+            document.querySelector(".any").innerHTML = "Your Akan name is" + maleNames[validate()];
+            document.querySelector(".text").innerHTML = "Your birth day is" + weekDays[validate()];
+            console.log("Your Akan name is" + maleNames[validate()]);
+        }
+        }
 
-    if(gender==="male"){
-        document.querySelector(".any").innerHTML="Your Akan name is"+ maleNames[validate()];
-        document.querySelector(".text").innerHTML="Your birth day is" + weekDays[validate()];
-    }
-    else{
-        document.querySelector(".any").innerHTML="Your Akan name is"+ maleNames[validate()];
-        document.querySelector(".text").innerHTML="Your birth day is" + weekDays[validate()]; 
-    }
-    if(gender==="female"){
-        document.querySelector(".any").innerHTML="Your Akan name is"+ femaleNames[validate()];
-        document.querySelector(".text").innerHTML="Your birth day is" + weekDays[validate()];
-    }
-    else{
-        document.querySelector(".any").innerHTML="Your Akan name is"+ femaleNames[validate()];
-        document.querySelector(".text").innerHTML="Your birth day is" + weekDays[validate()]; 
-    }
+        //var gender="female" ; 
+
+
+  
+    })
+
+
 }
-    
+    // if(gender=="male"){
+    //    document.querySelector(".any").innerHTML="Your Akan name is"+ maleNames[validate()]                                
+    //    document.querySelector(".text").innerHTML="Your birth day is" + weekDays[validate()];
+    // }
+    //  else{       
+    //      document.querySelector(".any").innerHTML="Your Akan name is"+ maleNames[validate()];
+    //      document.querySelector(".text").innerHTML="Your birth day is" + weekDays[validate()]; 
+    // }
+
+
+
+ //function yourAkanName(){
+//     var maleNames=["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+//     var femaleNames=["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+//     var weekDays=["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+//     var gender=document.querySelector('input[name="gender"]:checked');
+
+
+
+
+//     if(gender==="male"){
+//         document.querySelector(".any").innerHTML="Your Akan name is"+ maleNames[validate()];
+//         document.querySelector(".text").innerHTML="Your birth day is" + weekDays[validate()];
+//     }
+//     else{
+//         document.querySelector(".any").innerHTML="Your Akan name is"+ maleNames[validate()];
+//         document.querySelector(".text").innerHTML="Your birth day is" + weekDays[validate()]; 
+//     }
+
+// }    

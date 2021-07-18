@@ -21,7 +21,15 @@ ______
 * CSS
 * BOOTSTRAP
 * JAVASCRIPT
+_____________________
+## Bugs
+### No Bugs.
 ____
+## BDD
+Displays an error message if input is not entered.
+Input more than the limit displays an error.
+
+________
 ### <a href=" https://teresia012.github.io/akan_names_project/">Live link</a>
 ____
 ## Licence

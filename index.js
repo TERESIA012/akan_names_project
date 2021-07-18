@@ -44,9 +44,9 @@ function myAkanName() {
 
 //conditions
         if (gender.value === "Female") {
-            document.querySelector(".any").innerHTML = "Your Akan name is" + femaleNames[validate()];
-            document.querySelector(".text").innerHTML = "Your birth day is" + weekDays[validate()];
-            console.log("Your Akan name is" + femaleNames[validate()]);
+            document.querySelector(".any").innerHTML = "Your Akan name is" +  femaleNames[validate()];
+            document.querySelector(".text").innerHTML = "Your birth day is" +  weekDays[validate()];
+            console.log("Your Akan name is"  +  femaleNames[validate()]);
         }
         else if (gender.value === "Male") {
             document.querySelector(".any").innerHTML = "Your Akan name is" + maleNames[validate()];

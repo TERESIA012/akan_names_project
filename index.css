@@ -77,7 +77,7 @@ h4 {
 .right img {
     float: left;
     margin-right: 3%;
-    margin-left: 5%;
+    margin-left: 3%;
 }
 .right input {
     margin-top: 1.5rem;
@@ -90,13 +90,15 @@ h4 {
 .right {
     font-size: 16px;
     font-weight: 400;
-    margin-top: 8rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
+
 
 
 button {
    border-radius: 12px;
-   padding: 10px 24px;
+   padding: 8px 16px;
    background-color:#704d2d;
   color: black;
   border: 2px solid #f79400;
